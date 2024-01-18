@@ -2,6 +2,7 @@ import Image from "next/image";
 import wave from "@/ilustraciones/wave.svg";
 import link1 from "@/ilustraciones/link-1.svg";
 import link2 from "@/ilustraciones/link-2.svg";
+import { FormUrl } from "@/form/form-urls";
 
 export const metadata = {
   icons: {
@@ -20,10 +21,7 @@ export default function Home() {
         alt="vector"
         style={{ objectFit: "cover" }}
       />
-      <form className="form-acortador">
-        <input type="text" placeholder="Acortar Url" />
-        <button>Acortar</button>
-      </form>
+      <FormUrl />
       <Image
         className="image-wave"
         src={wave}
